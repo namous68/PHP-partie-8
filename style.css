@@ -1,0 +1,20 @@
+.info{
+background-color: beige;
+border: black solid 1px;
+display:inline-table ;
+margin-left: 20px;
+}
+
+.formule{
+    border: black 1px;
+}
+
+.form{
+    width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  display:inline-table ;
+}
+
