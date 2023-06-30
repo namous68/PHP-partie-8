@@ -1,17 +1,19 @@
 <?php
+    setcookie('user', json_encode($userInfo), time() + 86400); // Expire après 1 jour
+
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $lastname = $_POST['lastname'];
     $firstname = $_POST['firstname'];
     $age = $_POST['age'];
 
-    $userInfo = [
+    $userinfo = [
         'lastname' => $lastname,
         'firstname' => $firstname,
         'age' => $age
     ];
 
-    // Créer le cookie avec les informations
-    setcookie('user_info', json_encode($userInfo), time() + 86400); // Expire après 1 jour
+   
 }
 ?>
 
